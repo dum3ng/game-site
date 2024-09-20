@@ -1,9 +1,13 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import GameIntroPage from '../../components/GameIntroPage/GameIntroPage';
+import Head from '@docusaurus/Head';
+
+const description= "a simple match game"
 
 export default function Hello() {
   return (
-    <Layout title="Hello" description="Hello React Page">
+    <Layout title="OneUnite" description="One Unite game">
       <div
         style={{
           display: 'flex',
@@ -12,9 +16,7 @@ export default function Hello() {
           height: '50vh',
           fontSize: '20px',
         }}>
-        <p>
-          Edit <code>pages/helloReact.js</code> and save to reload.
-        </p>
+        <GameIntroPage icon='/img/oneunite/icon.png' name="One Unite" description={description} />
       </div>
     </Layout>
   );
