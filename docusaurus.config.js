@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -80,7 +80,7 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {to: '/oneunite', label: 'OneUnite', position: 'left'},
+          { to: '/oneunite', label: 'OneUnite', position: 'left' },
         ],
       },
       footer: {
@@ -95,6 +95,15 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Policy',
+            items: [
+              {
+                label: 'Privacy',
+                href: '/privacy',
+              },
+            ],
+          }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} MNS studio. `,
       },
