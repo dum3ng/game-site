@@ -8,20 +8,20 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'mns.works game',
+    title: '山海无界',
     tagline: '',
     favicon: 'img/favicons/favicon.png',
 
     // Set the production url of your site here
-    url: 'https://game.mns.works',
+    url: 'https://game.shanhai.site',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'mns-works', // Usually your GitHub org/user name.
-    projectName: 'game.mns.works', // Usually your repo name.
+    organizationName: '山海无界', // Usually your GitHub org/user name.
+    projectName: 'game.shanhai.site', // Usually your repo name.
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -74,13 +74,14 @@ const config = {
             // Replace with your project's social card
             image: 'img/docusaurus-social-card.jpg',
             navbar: {
-                title: 'MNS',
+                title: '山海无界',
                 logo: {
-                    alt: 'MNS Logo',
+                    alt: 'shanhaiwujie Logo',
                     src: 'img/logo.png',
                 },
                 items: [
-                    { to: '/oneunite', label: 'OneUnite', position: 'left' },
+                    // { to: '/oneunite', label: 'OneUnite', position: 'left' },
+                    { to: '/shicimizong', label: '诗词迷踪', position: 'left' },
                 ],
             },
             footer: {
@@ -91,12 +92,12 @@ const config = {
                         items: [
                             {
                                 label: 'Email',
-                                href: 'mailto:support@mns.works',
+                                href: 'mailto:admin@shanhai.site',
                             },
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} MNS studio. `,
+                copyright: `Copyright © ${new Date().getFullYear()} 山海无界 Co.,Ltd `,
             },
             prism: {
                 theme: prismThemes.github,

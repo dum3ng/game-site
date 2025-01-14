@@ -1,6 +1,6 @@
 type GetSource = 'ios' | 'google' | 'wechat'
 
-type GetLinks = {
+export type GetLinks = {
     [key in GetSource]?: string
 }
 

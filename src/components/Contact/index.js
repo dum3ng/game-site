@@ -1,5 +1,5 @@
 export default function Contact() {
-    return <div>
-        If you have any question , please contact support@mns.works
-    </div>
+    return (
+        <div>If you have any question , please contact admin@shanhai.site</div>
+    )
 }
