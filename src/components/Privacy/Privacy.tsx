@@ -7,11 +7,14 @@ export default function PrivacyApp() {
   const location = useLocation()
   const params = new URLSearchParams(location.search)
   const app = params.get('app')
-  const appname = toPascalCase(app)
+  const appname = app ? toPascalCase(app) : ''
 
   return <span>{appname}</span>
 }
 
+function isNil(a) {
+  return a === undefined || a === null
+}
 /**
  * 
  *  when the app not in the collection, we just redirect to 404
@@ -23,7 +26,7 @@ export function PrivacyNotFound() {
   const params = new URLSearchParams(location.search)
   const app = params.get('app')
 
-  if (!Apps.includes(toPascalCase(app))) {
+  if (isNil(app) || !Apps.includes(toPascalCase(app))) {
     return <Redirect to='/404' />
   } else {
     return <></>
