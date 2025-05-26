@@ -6,7 +6,7 @@ import { Apps } from '@site/src/constants';
 export default function PrivacyApp() {
   const location = useLocation()
   const params = new URLSearchParams(location.search)
-  const app = params.get('app')
+  const app = decodeURIComponent(params.get('app'))
   const appname = app ? toPascalCase(app) : ''
 
   return <span>{appname}</span>
@@ -24,7 +24,7 @@ export function PrivacyNotFound() {
 
   const location = useLocation()
   const params = new URLSearchParams(location.search)
-  const app = params.get('app')
+  const app = decodeURIComponent(params.get('app'))
 
   if (isNil(app) || !Apps.includes(toPascalCase(app))) {
     return <Redirect to='/404' />
